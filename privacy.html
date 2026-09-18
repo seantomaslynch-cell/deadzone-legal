@@ -13,7 +13,7 @@
   <header class="top">
     <span class="badge"><b></b> Zombie tower defence · plays fully offline</span>
     <h1>Deadzone — Last Line<br>Privacy Policy</h1>
-    <p class="meta">Last updated <strong>September 2, 2026</strong> · applies to the app on iOS, Android, and the web · <a href="index.html">← back</a> · <a href="support.html">Support</a></p>
+    <p class="meta">Last updated <strong>September 18, 2026</strong> · applies to the app on iOS, Android, and the web · <a href="index.html">← back</a> · <a href="support.html">Support</a></p>
   </header>
 
   <div class="keyfacts">
@@ -23,7 +23,8 @@
       <li><span class="ico">📴</span><span><strong>Your save stays on your device.</strong> The outpost, roster, and progress live in the app's local storage — we never see them, and nothing syncs to a server we run.</span></li>
       <li><span class="ico">🔑</span><span><strong>Backups are yours to move.</strong> The in-game backup code is generated on your device and only leaves it if you choose to copy or send it yourself.</span></li>
       <li><span class="ico">📺</span><span><strong>Every ad is optional.</strong> Rewarded video ads are shown only when you choose to watch one, served through Google AdMob, which independently collects device and ad-interaction data under its own policy.</span></li>
-      <li><span class="ico">🧾</span><span><strong>No in-app purchases today.</strong> If purchases are introduced later, they will be handled by Apple's or Google's own store billing (and, planned, RevenueCat) — this policy will be updated first.</span></li>
+      <li><span class="ico">🧾</span><span><strong>Purchases are optional.</strong> They go through Apple's own store billing, and RevenueCat validates them. Nothing in the game needs one to finish.</span></li>
+      <li><span class="ico">📣</span><span><strong>Ad measurement only if you allow it.</strong> From update 2.0.5, on iOS, if you allow tracking, TikTok's SDK reports that the game was installed, opened, or bought from, so TikTok can tell whether its ads worked. If you decline, it never starts.</span></li>
     </ul>
   </div>
 
@@ -103,12 +104,15 @@
     <section id="att">
       <h2><span class="num">06</span>App Tracking Transparency &amp; ad consent</h2>
       <p>On iOS, the game requests permission through Apple's <strong>App Tracking Transparency</strong> framework before any tracking-capable ad request is made. Declining does not block any ad — you'll still see rewarded ads, just without cross-app tracking used to select them.</p>
+      <p>The same permission covers ad measurement (§07): the game starts TikTok's SDK only if you allow tracking, and never asks a second time.</p>
       <p>For players in the UK and European Economic Area, the game presents Google's consent flow (built to the IAB Transparency &amp; Consent Framework) before showing ads, so you can choose what AdMob is allowed to do with your data in those regions.</p>
     </section>
 
     <section id="iap">
-      <h2><span class="num">07</span>In-app purchases <em>(planned)</em></h2>
-      <p>As of this version, <strong>the game sells nothing</strong> — there is no premium currency, subscription, or "remove ads" purchase. If a purchase option is added in a future update, it will be processed through Apple's or Google's own in-app billing (never a form inside the game), with purchase validation planned through <strong>RevenueCat</strong>, a subscription-management service. RevenueCat would receive only the technical data needed to validate a purchase — never your name, email, or payment details, which the app stores never share with the developer directly. This section will be updated with specifics before any purchase feature ships.</p>
+      <h2><span class="num">07</span>Purchases and ad measurement</h2>
+      <p><strong>Purchases.</strong> The game sells a few optional things: build tokens and crews that shorten waits, cosmetic skins and outpost decorations, seasonal cosmetic tracks, and bundles of those. It never sells scrap, food, or meds, and nothing is needed to finish the game. Payment happens in Apple's own store sheet, so the developer never sees your name, email, or payment details.</p>
+      <p>Purchases are validated by <strong>RevenueCat</strong>, which receives an anonymous app user ID, your purchase receipts, and basic device and country information, so it can tell the game what you own and restore it on a new device. It does not receive your name, email, or payment details.</p>
+      <p><strong>Ad measurement (iOS, only if you allow tracking).</strong> From update 2.0.5 on, if you allow tracking in the iOS prompt, the game starts <strong>TikTok's Business SDK</strong>. It tells TikTok when the game was installed or opened and when a purchase was made, including the purchase amount, so TikTok can measure whether its ads brought you to the game and show the game to people who may enjoy it. TikTok may receive your advertising identifier, IP address, and general device information. If you decline, the SDK never starts and TikTok receives nothing from the game. Turning tracking off later in iOS Settings → Privacy → Tracking stops it again.</p>
     </section>
 
     <section id="thirdparty">
@@ -117,8 +121,9 @@
         <table>
           <tr><th>Who</th><th>What for</th><th>What they may see</th></tr>
           <tr><td>Google AdMob</td><td>Rewarded video ads</td><td>Advertising ID, IP address, device info, ad interactions</td></tr>
-          <tr><td>Apple / Google app stores</td><td>Distribution, and (future) purchases</td><td>Whatever you've already shared with your App Store or Play account</td></tr>
-          <tr><td>RevenueCat <em>(planned)</em></td><td>Purchase validation, if purchases ship</td><td>Anonymous purchase receipts — no payment details</td></tr>
+          <tr><td>Apple / Google app stores</td><td>Distribution and purchases</td><td>Whatever you've already shared with your App Store or Play account</td></tr>
+          <tr><td>RevenueCat</td><td>Purchase validation and restore</td><td>Anonymous app user ID, purchase receipts, basic device and country info — no payment details</td></tr>
+          <tr><td>TikTok (iOS, from update 2.0.5, only if you allow tracking)</td><td>Measuring whether TikTok ads brought you to the game</td><td>Advertising ID, IP address, device info, install, open and purchase events with the purchase amount</td></tr>
         </table>
       </div>
       <p>No other third party receives data from the game.</p>
@@ -148,7 +153,7 @@
 
     <section id="changes">
       <h2><span class="num">12</span>Changes to this policy</h2>
-      <p>If this policy changes — most likely when in-app purchases are introduced — we'll update the "Last updated" date at the top and, for a material change, call it out in the game's update notes. Continuing to use the game after a change means you've seen and accepted the update.</p>
+      <p>If this policy changes we'll update the "Last updated" date at the top and, for a material change, call it out in the game's update notes. Continuing to use the game after a change means you've seen and accepted the update.</p>
     </section>
 
     <section id="contact">
